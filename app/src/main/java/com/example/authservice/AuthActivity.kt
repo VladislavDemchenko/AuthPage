@@ -21,11 +21,11 @@ class AuthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
         initializing()
-        Log.d("AuthActivity", "onCreate")
 
         button.setOnClickListener{
             val login = loginField.text.toString().trim()
             val password = passwordField.text.toString().trim()
+
             if (login.isEmpty() && password.isEmpty()) {
                 Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show()
             } else {
@@ -33,6 +33,8 @@ class AuthActivity : AppCompatActivity() {
                     Toast.makeText(this, "User is found", Toast.LENGTH_SHORT).show()
                     loginField.text.clear()
                     passwordField.text.clear()
+
+                    startActivity(Intent(this, ItemsActivity::class.java))
                 } else {
                     Toast.makeText(this, "User is not found", Toast.LENGTH_SHORT).show()
                 }
