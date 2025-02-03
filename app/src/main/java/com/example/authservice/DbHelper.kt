@@ -38,4 +38,23 @@ class DbHelper (val context: Context, factory: SQLiteDatabase.CursorFactory?):
         db.close()
     }
 
+    fun authUser(login: String, pass: String): Boolean {
+        val db = this.readableDatabase
+
+        val cursor = db.rawQuery("SELECT * FROM $TABLE_NAME WHERE $COLUMN_LOGIN = '$login' AND $COLUMN_PASSWORD = '$pass'", null)
+        var result = cursor.moveToFirst()
+        cursor.close()
+        db.close()
+        return result
+    }
+    fun isAuth(login: String): Boolean {
+        val db = this.readableDatabase
+
+        val cursor = db.rawQuery("SELECT * FROM $TABLE_NAME WHERE $COLUMN_LOGIN = '$login'", null)
+        var result = cursor.moveToFirst()
+        cursor.close()
+        db.close()
+        return result
+    }
+
 }

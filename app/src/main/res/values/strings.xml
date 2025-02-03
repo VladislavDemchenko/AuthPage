@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AuthService</string>
     <string name="registration">Registration</string>
+    <string name="authorization">Authorization</string>
 </resources>

@@ -7,19 +7,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#501806"
-        tools:context=".MainActivity">
+        android:background="#833218"
+        tools:context=".AuthActivity">
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="170dp"
+            android:layout_marginTop="230dp"
             android:textSize="30dp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:text="@string/registration" android:fontFamily="sans-serif"/>
+            android:text="@string/authorization" android:fontFamily="sans-serif"/>
     <EditText
-            android:id="@+id/login"
+            android:id="@+id/login_auth"
             android:layout_width="220dp"
             android:layout_height="50dp"
             android:ems="10"
@@ -30,18 +30,7 @@
             android:layout_gravity="center"
             android:textColor="#FFFFFF"/>
     <EditText
-            android:id="@+id/email"
-            android:layout_width="220dp"
-            android:layout_height="50dp"
-            android:ems="10"
-            android:hint="Enter email"
-            android:inputType="text"
-            android:textColorHint="#A4A3A3"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:textColor="#FFFFFF"/>
-    <EditText
-            android:id="@+id/password"
+            android:id="@+id/password_auth"
             android:layout_width="220dp"
             android:layout_height="50dp"
             android:ems="10"
@@ -52,7 +41,7 @@
             android:layout_gravity="center"
             android:textColor="#FFFFFF"/>
     <Button
-            android:id="@+id/button"
+            android:id="@+id/button_auth"
             android:layout_width="220dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
@@ -63,7 +52,7 @@
             android:layout_gravity="center"
             android:backgroundTint="@android:color/primary_text_dark"/>
     <TextView
-            android:id="@+id/auth_link"
+            android:id="@+id/registration_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
@@ -71,6 +60,6 @@
             android:textSize="15dp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:text="@string/authorization" android:fontFamily="sans-serif"/>
+            android:text="@string/registration" android:fontFamily="sans-serif"/>
 
 </LinearLayout>
