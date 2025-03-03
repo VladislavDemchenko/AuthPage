@@ -15,7 +15,10 @@
             android:theme="@style/Theme.AuthService"
             tools:targetApi="31">
         <activity
-                android:name=".activity.ItemsActivity"
+                android:name=".activity.ItemActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".activity.ItemListActivity"
                 android:exported="false"/>
         <activity
                 android:name=".activity.AuthActivity"

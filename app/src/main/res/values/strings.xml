@@ -3,4 +3,6 @@
     <string name="registration">Registration</string>
     <string name="authorization">Authorization</string>
     <string name="products">Products</string>
+    <string name="check">Check</string>
+    <string name="buy">Buy</string>
 </resources>

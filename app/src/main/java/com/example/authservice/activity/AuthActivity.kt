@@ -35,7 +35,8 @@ class AuthActivity : AppCompatActivity() {
                     loginField.text.clear()
                     passwordField.text.clear()
 
-                    startActivity(Intent(this, ItemsActivity::class.java))
+					val itemsIntent = Intent(this, ItemListActivity::class.java)
+                    startActivity(itemsIntent)
                 } else {
                     Toast.makeText(this, "User is not found", Toast.LENGTH_SHORT).show()
                 }
@@ -44,8 +45,8 @@ class AuthActivity : AppCompatActivity() {
 
 
         registerLink.setOnClickListener{
-            var intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            var registerIntent = Intent(this, MainActivity::class.java)
+            startActivity(registerIntent)
         }
     }
 
